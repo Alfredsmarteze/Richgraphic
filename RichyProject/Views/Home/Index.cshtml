@@ -2,9 +2,28 @@
     ViewData["Title"] = "Home Page";
 }
 
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
 
+        @*<h1 class="logo me-auto"><a href="index.html">Rich-Graphics</a></h1>*@
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a asp-action="Index" asp-controller="Home" class="logo me-auto"><img src="~/img/logo/Richlogo.jpg" alt="" class="img-fluid">Rich Graphics</a>
 
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto active text-primary" href="#hero">Home</a></li>
+                <li><a class="nav-link scrollto text-primary" href="#about">About</a></li>
+                <li><a class="nav-link scrollto text-primary" href="#services">Services</a></li>
+                <li><a class="nav-link   scrollto text-primary" href="#portfolio">Portfolio</a></li>
+                <li><a class="nav-link scrollto text-primary" href="#contact">Contact</a></li>
+                <li><a class="nav-link scrollto text-primary" href="#yourmessage">Message Us</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
 
+    </div>
+</header><!-- End Header -->
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex align-items-center">
 
@@ -15,7 +34,7 @@
                 <h2>We are team of talented designers making your brand outstanding</h2>
                 <div class="d-flex justify-content-center justify-content-lg-start">
                     <a href="#about" class="btn-get-started scrollto">Get Started</a>
-                   @* <a href="https://www.youtube.com/raigdanamasonwowhor" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>*@
+                    @* <a href="https://www.youtube.com/raigdanamasonwowhor" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>*@
                 </div>
             </div>
             <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
@@ -509,19 +528,18 @@
             </div>
         </section>*@<!-- End Pricing Section -->
     <!-- #endregion -->
-   
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
-        <div class="container" data-aos="fade-up">
+        <div class="container justify-content-center" data-aos="fade-up">
 
             <div class="section-title">
                 <h2>Contact</h2>
             </div>
 
-            <div class="row">
 
-                <div class="col-lg-5 d-flex align-items-stretch">
-                    <div class="info">
+            <div class="row  lign-items-stretch">
+                <div class="col-lg-10">
+                    <div class="info justify-content-center">
                         <div class="address">
                             <i class="bi bi-geo-alt"></i>
                             <h4>Location:</h4>
@@ -540,45 +558,25 @@
                             <p class="bi-whatsapp">+2349062289692, +2348152181591 </p>
                         </div>
 
-                        @* <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>*@
                     </div>
-
                 </div>
+                @*</div>*@
 
-                <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                                <label for="name">your name</label>
-                                <input type="text" name="name" class="form-control" disabled id="name" required>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="name">your email</label>
-                                <input type="email" class="form-control" disabled name="email" id="email" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="name">subject</label>
-                            <input type="text" class="form-control" disabled name="subject" id="subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="name">message</label>
-                            <textarea class="form-control" name="message" disabled rows="10" required></textarea>
-                        </div>
-                        <div class="my-3">
-                            <div class="loading">loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">your message has been sent. thank you!</div>
-                        </div>
-                        <div class="text-center"><button type="submit" disabled>send message</button></div>
-                    </form>
-                </div>
+
 
             </div>
+        </div>
+
+    </section><!-- End Contact Section -->
+    @* section message us *@
+    <section id="yourmessage">
+        <div class=" container   section-title  col-lg-12  yourmessage">
+            <br><br>
+            <h2>Your Message</h2>
+            <partial name="Yourmessage">
 
         </div>
-    </section><!-- End Contact Section -->
-
+    </section> @*End section message us*@
 </main><!-- End #main -->
 <!-- ======= Footer ======= -->
 <footer id="footer">
@@ -591,7 +589,7 @@
                 <div class="col-lg-3 col-md-6 footer-contact">
                     <h3>Address</h3>
                     <p>
-                        8A, Dr Ladi Alakija Avenue,<br>  
+                        8A, Dr Ladi Alakija Avenue,<br>
                         Lekki Phase 1, <br>
                         Lagos <br><br>
                         <strong>Phone:</strong>+2349062289692, +2348152181591 <br>
@@ -624,15 +622,28 @@
                     <h4>Our Social Networks</h4>
                     @*<p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>*@
                     <div class="social-links mt-3">
-                       @* <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>*@
+                        @* <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>*@
                         <a href="https://www.facebook.com/richardmandz" class="facebook"><i class="bx bxl-facebook"></i></a>
                         <a href="https://www.instagram.com/richykiss" class="instagram"><i class="bx bxl-instagram"></i></a>
-                     @*   <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>*@
-                       @* <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>*@
+                        @*   <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>*@
+                        @* <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>*@
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
-    </footer>
+</footer>
+
+<div class="container-fluid footer-bottom clearfix text-center bg-dark container-fluid">
+    <div class="copyright">
+        &copy; @DateTime.Now.Year <strong><span>RICH GRAPHICS</span></strong>.
+    </div>
+    <div class="credits">
+
+        Develop by <a href="https://smartcode.azurewebsites.net">Smartcode Solutions</a>
+    </div>
+
+
+
+</div>
