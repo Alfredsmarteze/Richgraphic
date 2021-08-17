@@ -37,6 +37,7 @@ namespace RichyProject.Controllers
         }
 
         [HttpPost]
+        [AutoValidateAntiforgeryToken]
         public async Task <IActionResult> Yourmessage( YourMessage yourMessage)
         {
             if (ModelState.IsValid)
