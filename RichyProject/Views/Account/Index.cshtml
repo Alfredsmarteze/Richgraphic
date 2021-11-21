@@ -1,5 +1,9 @@
 ﻿@model IEnumerable<RichyProject.Models.YourMessage>
 
+@section NoIndexing{
+    <meta name="robots" content="noindex, nofollow" />
+}
+
 @{
     ViewData["Title"] = "ListOfMessages";
     Layout = "~/Views/Shared/_Layout1.cshtml";

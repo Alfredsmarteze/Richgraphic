@@ -1,5 +1,9 @@
 ﻿@model IEnumerable<RichyProject.Models.YourMessage>
 
+@section NoIndexing{
+    <meta name="robots" content="noindex, nofollow" />
+}
+
 @{
     ViewData["Title"] = "ListOfMessages";
     Layout = "~/Views/Shared/_Layout1.cshtml";
@@ -23,59 +27,59 @@
     </header><!-- End Header -->
     <br><br><br>
 
- </div>
-    <div class="container-fluid">
-        <h1 class="text-center">List Of Messages</h1>
+</div>
+<div class="container-fluid">
+    <h1 class="text-center">List Of Messages</h1>
 
 
-        <table class="table table-responsive w-100">
-            <thead>
+    <table class="table table-responsive w-100">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PhoneNumber)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Subject)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Message)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
                 <tr>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Name)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.PhoneNumber)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Email)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Subject)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Message)
-                    </th>
-                    <th></th>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td class="text-break">
+                        @Html.DisplayFor(modelItem => item.PhoneNumber)
+                    </td>
+                    <td class="text-break">
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Subject)
+                    </td>
+                    <td class="text-break">
+                        @Html.DisplayFor(modelItem => item.Message)
+                    </td>
+                    <td>
+                        @* <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |*@
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+                        @* <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>*@
+                    </td>
                 </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
-                {
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Name)
-                        </td>
-                        <td class="text-break">
-                            @Html.DisplayFor(modelItem => item.PhoneNumber)
-                        </td>
-                        <td class="text-break">
-                            @Html.DisplayFor(modelItem => item.Email)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Subject)
-                        </td>
-                        <td class="text-break">
-                            @Html.DisplayFor(modelItem => item.Message)
-                        </td>
-                        <td>
-                            @* <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |*@
-                            <a asp-action="Details" asp-route-id="@item.Id">Details</a>
-                            @* <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>*@
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    </div>
-    <br>
+            }
+        </tbody>
+    </table>
+</div>
+<br>

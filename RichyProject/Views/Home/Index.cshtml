@@ -3,12 +3,12 @@
 }
 
 <!-- ======= Header ======= -->
-<header id="header" class="fixed-top ">
+<header id="header" class="fixed-top bg-light">
     <div class="container d-flex align-items-center">
 
         @*<h1 class="logo me-auto"><a href="index.html">Rich-Graphics</a></h1>*@
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a asp-action="Index" asp-controller="Home" class="logo me-auto"><img src="~/img/logo/Richlogo.jpg" alt="" class="img-fluid">Rich Graphics</a>
+        <a asp-action="Index" asp-controller="Home" class="logo me-auto"><img src="~/img/logo/newLogo.png" alt="" class="img-fluid">Rich Graphics</a>
 
         <nav id="navbar" class="navbar">
             <ul>
@@ -25,7 +25,7 @@
     </div>
 </header><!-- End Header -->
 <!-- ======= Hero Section ======= -->
-<section id="hero" class="d-flex align-items-center">
+<section id="hero" class="d-flex align-items-center bg-success">
 
     <div class="container">
         <div class="row">
@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-                <img src="~/img/heroo-img.jpg" class="img-fluid animated" alt="">
+                <img src="~/img/bouncingImg.png" class="img-fluid animated" alt="">
             </div>
         </div>
     </div>
@@ -52,6 +52,9 @@
         <div class="container">
 
             <div class="row" data-aos="zoom-in">
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="~/img/clients/client-6.png" class="img-fluid" alt="">
+                </div>
 
                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
                     <img src="~/img/clients/client-1.jpg" class="img-fluid" alt="">
@@ -72,6 +75,7 @@
                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
                     <img src="~/img/clients/client-5.jpg" class="img-fluid" alt="">
                 </div>
+
 
 
             </div>
@@ -173,7 +177,7 @@
                     <img src="~/img/skills.png" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
-                    <h3>Why You Nee Our Services</h3>
+                    <h3>Why You Need Our Services</h3>
                     @*<p class="fst-italic">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                             magna aliqua.
@@ -288,93 +292,221 @@
 
             <div class="row portfolio-container portfolio" data-aos="fade-up" data-aos-delay="200">
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-img"><img src="~/img/portfolio/portfolio1.jpg" class="img-fluid" alt=""></div>
-                    <div class="portfolio-info">
-                        @*<h4>App 1</h4>
-                            <p>App</p>*@
-                        <a href="/img/portfolio/portfolio3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
-                        @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                <div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-img"><img src="~/img/portfolio/newPortfolio1.jpg" class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            @*<h4>App 1</h4>
+                <p>App</p>*@
+                            <a href="/img/portfolio/newPortfolio1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+                            @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-img"><img src="~/img/portfolio/newPortfolio2.jpg" class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            @*<h4>Web 3</h4>
+                <p>Web</p>*@
+                            <a href="/img/portfolio/newPortfolio2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+                            @*  <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-img"><img src="~/img/portfolio/newPortfolio5.jpg" class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            @*<h4>Web 3</h4>
+                <p>Web</p>*@
+                            <a href="/img/portfolio/newPortfolio5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+                            @*  <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-img"><img src="~/img/portfolio/newPortfolio6.jpg" class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            @*<h4>Web 3</h4>
+                <p>Web</p>*@
+                            <a href="/img/portfolio/newPortfolio6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+                            @*  <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-img"><img src="~/img/portfolio/newPortfolio10.jpg" class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            @*<h4>App 2</h4>
+                <p>App</p>*@
+                            <a href="/img/portfolio/newPortfolio10.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+                            @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-img"><img src="/img/portfolio/newPortfolio12.jpg" class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            @*<h4>Card 2</h4>
+                <p>Card</p>*@
+                            <a href="/img/portfolio/newPortfolio12.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+                            @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-img"><img src="~/img/portfolio/newPortfolio20.jpg" class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            @*<h4>Web 2</h4>
+                <p>Web</p>*@
+                            <a href="/img/portfolio/newPortfolio20.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+                            @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-img"><img src="~/img/portfolio/newPortfolio14.jpg" class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            @*<h4>App 3</h4>
+                <p>App</p>*@
+                            <a href="/img/portfolio/newPortfolio14.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+                            @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-img"><img src="~/img/portfolio/newPortfolio9.jpg" class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            @*<h4>Card 1</h4>
+                <p>Card</p>*@
+                            <a href="/img/portfolio/newPortfolio9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+                            @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-img"><img src="~/img/portfolio/newPortfolio4.jpg" class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            @*<h4>Card 3</h4>
+                <p>Card</p>*@
+                            <a href="/img/portfolio/newPortfolio4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+                            @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-img"><img src="~/img/portfolio/newPortfolio8.jpg" class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            @*<h4>Web 3</h4>
+                <p>Web</p>*@
+                            <a href="/img/portfolio/newPortfolio8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+                            @* <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-img"><img src="~/img/portfolio/newPortfolio7.jpg" class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            @*<h4>Web 3</h4>
+                <p>Web</p>*@
+                            <a href="/img/portfolio/newPortfolio7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+                            @* <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-img"><img src="~/img/portfolio/newPortfolio19.jpg" class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            @*<h4>Web 3</h4>
+                <p>Web</p>*@
+                            <a href="/img/portfolio/newPortfolio19.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+                            @* <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                        </div>
                     </div>
                 </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <div class="portfolio-img"><img src="~/img/portfolio/portfolio2.jpg" class="img-fluid" alt=""></div>
-                    <div class="portfolio-info">
-                        @*<h4>Web 3</h4>
-                            <p>Web</p>*@
-                        <a href="/img/portfolio/portfolio1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
-                        @*  <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                <div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-img"><img src="~/img/portfolio/portfolio1.jpg" class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            @*<h4>App 1</h4>
+                <p>App</p>*@
+                            <a href="/img/portfolio/portfolio3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+                            @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-img"><img src="~/img/portfolio/portfolio3.jpg" class="img-fluid" alt=""></div>
-                    <div class="portfolio-info">
-                        @*<h4>App 2</h4>
-                            <p>App</p>*@
-                        <a href="/img/portfolio/portfolio2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
-                        @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-img"><img src="~/img/portfolio/portfolio2.jpg" class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            @*<h4>Web 3</h4>
+                <p>Web</p>*@
+                            <a href="/img/portfolio/portfolio1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+                            @*  <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                    <div class="portfolio-img"><img src="/img/portfolio/portfolio4.jpg" class="img-fluid" alt=""></div>
-                    <div class="portfolio-info">
-                        @*<h4>Card 2</h4>
-                            <p>Card</p>*@
-                        <a href="/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
-                        @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-img"><img src="~/img/portfolio/portfolio3.jpg" class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            @*<h4>App 2</h4>
+                <p>App</p>*@
+                            <a href="/img/portfolio/portfolio2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+                            @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <div class="portfolio-img"><img src="~/img/portfolio/portfolio5.jpg" class="img-fluid" alt=""></div>
-                    <div class="portfolio-info">
-                        @*<h4>Web 2</h4>
-                            <p>Web</p>*@
-                        <a href="/img/portfolio/portfolio4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
-                        @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-img"><img src="/img/portfolio/portfolio4.jpg" class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            @*<h4>Card 2</h4>
+                <p>Card</p>*@
+                            <a href="/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+                            @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-img"><img src="~/img/portfolio/portfolio6.jpg" class="img-fluid" alt=""></div>
-                    <div class="portfolio-info">
-                        @*<h4>App 3</h4>
-                            <p>App</p>*@
-                        <a href="/img/portfolio/portfolio9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
-                        @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-img"><img src="~/img/portfolio/portfolio5.jpg" class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            @*<h4>Web 2</h4>
+                <p>Web</p>*@
+                            <a href="/img/portfolio/portfolio4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+                            @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                    <div class="portfolio-img"><img src="~/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></div>
-                    <div class="portfolio-info">
-                        @*<h4>Card 1</h4>
-                            <p>Card</p>*@
-                        <a href="/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
-                        @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-img"><img src="~/img/portfolio/portfolio6.jpg" class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            @*<h4>App 3</h4>
+                <p>App</p>*@
+                            <a href="/img/portfolio/portfolio9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+                            @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                    <div class="portfolio-img"><img src="~/img/portfolio/portfolio8.jpg" class="img-fluid" alt=""></div>
-                    <div class="portfolio-info">
-                        @*<h4>Card 3</h4>
-                            <p>Card</p>*@
-                        <a href="/img/portfolio/portfolio8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
-                        @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-img"><img src="~/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            @*<h4>Card 1</h4>
+                <p>Card</p>*@
+                            <a href="/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+                            @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <div class="portfolio-img"><img src="~/img/portfolio/portfolio9.jpg" class="img-fluid" alt=""></div>
-                    <div class="portfolio-info">
-                        @*<h4>Web 3</h4>
-                            <p>Web</p>*@
-                        <a href="/img/portfolio/portfolio9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
-                        @* <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <div class="portfolio-img"><img src="~/img/portfolio/portfolio8.jpg" class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            @*<h4>Card 3</h4>
+                <p>Card</p>*@
+                            <a href="/img/portfolio/portfolio8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+                            @*<a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-img"><img src="~/img/portfolio/portfolio9.jpg" class="img-fluid" alt=""></div>
+                        <div class="portfolio-info">
+                            @*<h4>Web 3</h4>
+                <p>Web</p>*@
+                            <a href="/img/portfolio/portfolio9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+                            @* <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>*@
+                        </div>
                     </div>
                 </div>
 
@@ -549,7 +681,7 @@
                         <div class="email">
                             <i class="bi bi-envelope"></i>
                             <h4>Email:</h4>
-                            <p>raigdanamason8@gmail.com</p>
+                            <p>richgraphics8@gmail.com</p>
                         </div>
 
                         <div class="phone">
@@ -593,7 +725,7 @@
                         Lekki Phase 1, <br>
                         Lagos <br><br>
                         <strong>Phone:</strong>+2349062289692, +2348152181591 <br>
-                        <strong>Email:</strong> raigdanamason8@gmail.com<br>
+                        <strong>Email:</strong> richgraphics8@gmail.com<br>
                     </p>
                 </div>
 
